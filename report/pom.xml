@@ -39,6 +39,11 @@
 
 
 	<dependencies>
+		<dependency>
+			<groupId>com.tora</groupId>
+			<artifactId>calculator</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 
 </project>

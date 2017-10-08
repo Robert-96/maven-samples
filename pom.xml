@@ -84,6 +84,7 @@
 
 	<modules>
 		<module>report</module>
+		<module>calculator</module>
 		<!-- add here any other modules -->
 	</modules>
 
