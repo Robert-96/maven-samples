@@ -39,17 +39,6 @@
 
 
 	<dependencies>
-		<dependency>
-			<groupId>com.tora</groupId>
-			<artifactId>day1</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.tora</groupId>
-			<artifactId>day2</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-
 	</dependencies>
 
 </project>
