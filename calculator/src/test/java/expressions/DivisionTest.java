@@ -23,7 +23,7 @@ public class DivisionTest {
         second = new Constant(0);
 
         try {
-            assertEquals(new Division(first, second).evaluate(), 2, delta);
+            new Division(first, second).evaluate();
             fail("Expect ArithmeticException");
         } catch (ArithmeticException exception) {}
     }
