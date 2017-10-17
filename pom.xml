@@ -42,7 +42,6 @@
 			<scope>test</scope>
 		</dependency>
 
-
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
@@ -83,9 +82,8 @@
 	</dependencies>
 
 	<modules>
-		<module>day1</module>
-		<module>day2</module>
 		<module>report</module>
+		<module>memory-repository</module>
 		<!-- add here any other modules -->
 	</modules>
 
