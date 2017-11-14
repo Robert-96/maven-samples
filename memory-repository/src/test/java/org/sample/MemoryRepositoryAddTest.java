@@ -43,7 +43,7 @@ public class MemoryRepositoryAddTest {
     }
 
     @Benchmark
-    public void testAddRandomInexising(RepositoryState repositoryState, RandomNonExisting randomNonExisting) {
+    public void testAddRandomNonExising(RepositoryState repositoryState, RandomNonExisting randomNonExisting) {
         repositoryState.orders.add(randomNonExisting.order);
     }
 

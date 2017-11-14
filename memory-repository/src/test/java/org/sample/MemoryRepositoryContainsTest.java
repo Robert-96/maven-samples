@@ -48,7 +48,7 @@ public class MemoryRepositoryContainsTest {
     }
 
     @Benchmark
-    public void testContainsForNonExising(RepositoryState repositoryState, RandomNonExisting randomNonExisting) {
+    public void testContainsForNonExisting(RepositoryState repositoryState, RandomNonExisting randomNonExisting) {
         repositoryState.orders.contains(randomNonExisting.order);
     }
 }

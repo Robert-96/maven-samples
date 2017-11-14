@@ -43,7 +43,7 @@ public class MemoryRepositoryRemoveTest {
     }
 
     @Benchmark
-    public void testRemoveForNonExising(RepositoryState repositoryState, MemoryRepositoryContainsTest.RandomNonExisting randomNonExisting) {
+    public void testRemoveForNonExisting(RepositoryState repositoryState, MemoryRepositoryContainsTest.RandomNonExisting randomNonExisting) {
         repositoryState.orders.remove(randomNonExisting.order);
     }
 }
