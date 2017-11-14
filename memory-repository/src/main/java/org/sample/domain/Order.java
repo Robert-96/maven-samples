@@ -1,6 +1,7 @@
-package domain;
+package org.sample.domain;
 
-public class Order {
+public class Order implements Comparable<Order> {
+
     private int id;
     private int price;
     private int quantity;
@@ -62,5 +63,13 @@ public class Order {
                 ", price=" + price +
                 ", quantity=" + quantity +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Order order) {
+        if(order.price * order.quantity > quantity * price)
+            return 1;
+        else
+            return -1;
     }
 }
