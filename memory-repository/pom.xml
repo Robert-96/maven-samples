@@ -41,7 +41,6 @@ THE POSSIBILITY OF SUCH DAMAGE.
     </parent>
 
     <artifactId>memory-repository</artifactId>
-    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>JMH benchmark sample: Java</name>
