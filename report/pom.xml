@@ -39,6 +39,11 @@
 
 
 	<dependencies>
+		<dependency>
+			<groupId>com.tora</groupId>
+			<artifactId>big-decimal</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 
 </project>

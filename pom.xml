@@ -84,6 +84,7 @@
 
 	<modules>
 		<module>report</module>
+		<module>big-decimal</module>
 	</modules>
 
 	<profiles>
