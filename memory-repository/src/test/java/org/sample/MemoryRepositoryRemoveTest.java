@@ -10,6 +10,9 @@ import org.sample.state.RepositoryState;
 
 
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
+@Measurement(iterations = 5)
+@Warmup(iterations = 5)
+@Fork(5)
 public class MemoryRepositoryRemoveTest {
 
     @State(Scope.Benchmark)
