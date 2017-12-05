@@ -1,16 +1,17 @@
+package big;
+
 import static org.junit.Assert.*;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.io.*;
-import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.math.BigDecimal;
 
 @RunWith(Parameterized.class)
 public class BigDecimalSerializerTest {

@@ -1,8 +1,11 @@
+package big;
+
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
-import java.math.BigDecimal;
 import java.util.List;
+import java.math.BigDecimal;
 
 public class BigDecimalCreatorTest {
 
