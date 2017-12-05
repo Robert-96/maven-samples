@@ -83,9 +83,8 @@
 	</dependencies>
 
 	<modules>
-		<module>day1</module>
-		<module>day2</module>
 		<module>report</module>
+		<module>producer-consumer</module>
 		<!-- add here any other modules -->
 	</modules>
 
