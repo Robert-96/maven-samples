@@ -1,8 +1,12 @@
 import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+import java.io.*;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
@@ -23,18 +27,27 @@ public class BigDecimalSerializerTest {
 
     }
 
+    @After
+    public void tearDown() {
+        try(ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("src/main/resources/big_decimals.ser")))) {
+            out.write((" ").getBytes());
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Test
     public void testSerializeAndDeserializeBigDecimals() {
-        BigDecimalSerializer.serializeBigDecimals(BigDecimalCreator.create(size), "src/main/resources/big_decimals.json");
-        List<BigDecimal> bigDecimals = BigDecimalSerializer.deserializeBigDecimals("src/main/resources/big_decimals.json");
+        BigDecimalSerializer.serializeBigDecimals(BigDecimalCreator.create(size), "src/main/resources/big_decimals.ser");
+        List<BigDecimal> bigDecimals = BigDecimalSerializer.deserializeBigDecimals("src/main/resources/big_decimals.ser");
 
         assertEquals((int) size, bigDecimals.size());
     }
 
     @Test
     public void testSerializeAndDeserializeBigDecimalsForValues() {
-        BigDecimalSerializer.serializeBigDecimals(BigDecimalCreator.create(size, "1.1"), "src/main/resources/big_decimals.json");
-        List<BigDecimal> bigDecimals = BigDecimalSerializer.deserializeBigDecimals("src/main/resources/big_decimals.json");
+        BigDecimalSerializer.serializeBigDecimals(BigDecimalCreator.create(size, "1.1"), "src/main/resources/big_decimals.ser");
+        List<BigDecimal> bigDecimals = BigDecimalSerializer.deserializeBigDecimals("src/main/resources/big_decimals.ser");
 
         for (BigDecimal bigDecimal : bigDecimals) {
             assertEquals("1.1", bigDecimal.toString());
