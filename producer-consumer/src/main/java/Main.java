@@ -15,8 +15,8 @@ public class Main {
 
     private static void restoreObjects(){
 
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("src/main/resources/output.txt", true));
-             Scanner scanner = new Scanner(new File("src/main/resources/input.txt")).useDelimiter("%")) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("./producer-consumer/src/main/resources/output.txt", true));
+             Scanner scanner = new Scanner(new File("./producer-consumer/src/main/resources/input.txt")).useDelimiter("%")) {
 
             int total = 0;
             int valid = 0;

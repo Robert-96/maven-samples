@@ -19,7 +19,7 @@ public class Producer extends Thread {
 
     @Override
     public void run(){
-        try(Scanner scanner = new Scanner(new File("/src/main/resources/input.txt")).useDelimiter("%")) {
+        try(Scanner scanner = new Scanner(new File("./producer-consumer/src/main/resources/input.txt")).useDelimiter("%")) {
 
             int total = 0;
 

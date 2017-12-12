@@ -17,7 +17,7 @@ public class Consumer extends Thread {
 
     @Override
     public void run() {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("/src/main/resources/consumer_output.txt", true))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("./producer-consumer/src/main/resources/consumer_output.txt", true))) {
 
             int valid = 0;
 
