@@ -85,6 +85,7 @@
 	<modules>
 
 		<module>report</module>
+		<module>chat</module>
 		<!-- add here any other modules -->
 	</modules>
 

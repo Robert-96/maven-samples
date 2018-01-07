@@ -40,6 +40,12 @@
 
 	<dependencies>
 
+		<dependency>
+			<groupId>com.tora</groupId>
+			<artifactId>chat</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
